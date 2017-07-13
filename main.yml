@@ -1,6 +1,7 @@
 ---
 - name: Test ansible-jenkins playbook
-
+  hosts: localhost
+  connection: local
   tasks:
     - name: First task
       debug:
