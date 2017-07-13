@@ -1,0 +1,7 @@
+---
+- name: Test playbook by roles
+  hosts: jenkins_nodes
+  become: true
+
+  roles:
+    - common
