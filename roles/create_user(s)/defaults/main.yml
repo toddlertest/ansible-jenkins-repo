@@ -1,1 +1,9 @@
 ---
+# Default vars create_user(s) role
+user_name: test_user_name
+# List of comma sep. groups in which user will be the member
+user_groups:
+user_shell: 
+user_comment:
+# Default user state is present
+user_state:
