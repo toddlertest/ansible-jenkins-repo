@@ -1,0 +1,9 @@
+---
+- name: Test ansible-jenkins playbook
+
+  tasks:
+    - name: First task
+      debug:
+        msg: test string from playbook
+      tags:
+        - debug_task
