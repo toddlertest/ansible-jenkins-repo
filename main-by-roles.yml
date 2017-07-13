@@ -1,6 +1,7 @@
 ---
 - name: Test playbook by roles
   hosts: jenkins_nodes
+  remote_user: ubuntu
   become: true
 
   roles:
