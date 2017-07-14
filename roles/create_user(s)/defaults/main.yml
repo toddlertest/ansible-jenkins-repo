@@ -8,4 +8,4 @@ user_groups:
 user_shell:
 user_comment:
 # Default user state is present
-user_state:
+user_state: present
