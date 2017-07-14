@@ -8,3 +8,4 @@
     groups: "{{ user_groups | default(user_primary_group) }}"
     shell: "{{ user_shell | default('/bin/bash', true) }}"
     state: "{{ user_state | default('present', true)}}"
+  with_items: "{{ users }}"
