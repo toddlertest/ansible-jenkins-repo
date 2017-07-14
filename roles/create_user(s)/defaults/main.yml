@@ -4,7 +4,7 @@ user_name: test_user_name
 # User primary group
 user_primary_group: admin
 # List of comma sep. groups in which user will be the member
-user_groups:
+user_groups: admin
 user_shell:
 user_comment:
 # Default user state is present
