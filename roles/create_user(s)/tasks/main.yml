@@ -7,4 +7,4 @@
     group: "{{ user_primary_group }}"
     groups: "{{ user_groups }}"
     shell: "{{ user_shell | default('/bin/bash') }}"
-    state: "{{ user_state | default('present') }}"
+    state: "{{ user_state }}"
