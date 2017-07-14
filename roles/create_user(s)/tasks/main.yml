@@ -6,5 +6,5 @@
     comment: "{{ user_comment | default(user_created_by_ansible) }}"
     group: "{{ user_primary_group }}"
     groups: "{{ user_groups }}"
-    shell: "{{ user_shell | default("/bin/bash") }}"
+    shell: "{{ user_shell | default('/bin/bash') }}"
     state: "{{ user_state | default(present) }}"
