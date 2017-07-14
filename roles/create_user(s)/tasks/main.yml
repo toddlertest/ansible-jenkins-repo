@@ -1,6 +1,7 @@
 ---
 # Tasks for create_user(s) roles
 - name: Add user(s) to the system
+  gather_facts: no
   user:
     name: "{{ user_name }}"
     comment: "{{ user_comment | default(user_created_by_ansible) }}"
