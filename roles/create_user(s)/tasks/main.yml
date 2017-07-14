@@ -2,10 +2,10 @@
 # Tasks for create_user(s) roles
 - name: Add user(s) to the system
   user:
-    name: "{{ user_name }}"
-    comment: "{{ user_comment | default(user_created_by_ansible) }}"
-    group: "{{ user_primary_group }}"
-    groups: "{{ user_groups | default(user_primary_group) }}"
-    shell: "{{ user_shell | default('/bin/bash', true) }}"
-    state: "{{ user_state | default('present', true)}}"
+    name: "{{ item.user_name }}"
+    comment: "{{ item.user_comment | default(user_created_by_ansible) }}"
+    group: "{{ item.user_primary_group }}"
+    groups: "{{ item.user_groups | default(user_primary_group) }}"
+    shell: "{{ item.user_shell | default('/bin/bash', true) }}"
+    state: "{{ item.user_state | default('present', true)}}"
   with_items: "{{ users }}"

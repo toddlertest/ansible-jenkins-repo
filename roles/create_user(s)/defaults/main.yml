@@ -1,14 +1,14 @@
 ---
+# Default vars create_user(s) role
 users:
   - user_1:
-      # Default vars create_user(s) role
       user_name: test_user_name_2
       # User primary group
       user_primary_group: admin
       # List of comma sep. groups in which user will be the member
       user_groups: admin,sudo
-      # Default value for shell is /bin/bash
+      # Default value for shell is /bin/bash(defined in tasks)
       user_shell:
       user_comment:
-      # Default user state is present
+      # Default user state is present(deefined in tasks)
       user_state:
