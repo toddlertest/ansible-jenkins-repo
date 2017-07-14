@@ -5,7 +5,8 @@ user_name: test_user_name_2
 user_primary_group: admin
 # List of comma sep. groups in which user will be the member
 user_groups: admin,sudo
+# Default value for shell is /bin/bash
 user_shell:
 user_comment:
 # Default user state is present
-user_state: present
+user_state:
