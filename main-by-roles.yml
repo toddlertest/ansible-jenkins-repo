@@ -6,4 +6,4 @@
   become: true
 
   roles:
-    - create_user(s)
+    - deploy_docker
