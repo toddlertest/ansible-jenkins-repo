@@ -6,4 +6,4 @@
   become: true
 
   roles:
-    - deploy_docker
+    #- deploy_docker
